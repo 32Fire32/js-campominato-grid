@@ -53,6 +53,10 @@ main {
     justify-content: center;
 }
 
+.active {
+    background-color: blue;
+}
+
 footer {
     padding: 1rem;
     display: flex;
