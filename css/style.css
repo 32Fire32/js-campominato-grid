@@ -46,11 +46,24 @@ main {
 
 .cellboard {
     border: 1px solid black;
-    height: calc(100% / 10);
-    width: calc(100% / 10);
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.easy {
+    height: calc(100% / 10);
+    width: calc(100% / 10);
+}
+
+.hard {
+    height: calc(100% / 9);
+    width: calc(100% / 9);
+}
+
+.hell {
+    height: calc(100% / 7);
+    width: calc(100% / 7);
 }
 
 .active {

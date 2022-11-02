@@ -14,7 +14,14 @@
             <span>Campo Minato</span>
         </div>
         <div class="play">
-            <button>Play</button>
+            <label for="level">Difficoltà:</label>
+            <select id="select1">
+                <option value="easy">Facile</option>
+                <option value="hard">Difficile</option>
+                <option value="hell">Inferno</option>
+            </select>
+            <button onclick="getOption()"> Play </button>
+            
         </div>
     </header>
     <main>
@@ -24,7 +31,7 @@
     </main>
     <footer>
         <span>Made with ❤ by Boolean</span>
-    </footer>
+    </footer>   
     
     <script src="js/main.js"></script>
 </body>
