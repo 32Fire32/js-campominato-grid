@@ -31,12 +31,11 @@ const cellContainer = document.querySelector(".board");
 
 // mi prendo i valori delle options
 playButton.addEventListener('click', function(){
-    const selectElement = document.querySelector('#select1');
-    const output = selectElement.value;
-    console.log(output);
-    if ( output === "easy") {        
+    const selectElement = document.getElementById("level").value;
+    console.log(selectElement);
+    if ( selectElement === "easy") {        
         startGame(cellContainer, 100, "easy");        
-    } else if (output === "hard") {        
+    } else if (selectElement === "hard") {        
         startGame(cellContainer, 81, "hard");            
     } else {        
         startGame(cellContainer, 49, "hell");
