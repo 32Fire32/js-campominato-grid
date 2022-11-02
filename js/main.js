@@ -30,23 +30,16 @@ const playButton = document.querySelector("button");
 const cellContainer = document.querySelector(".board");
 
 // mi prendo i valori delle options
-
-function getOption() {
+playButton.addEventListener('click', function(){
     const selectElement = document.querySelector('#select1');
     const output = selectElement.value;
     console.log(output);
-    if ( output === "easy") {
-        playButton.addEventListener('click', function(){
-        startGame(cellContainer, 100, "easy");
-        }
-    )} else if (output === "hard") {
-        playButton.addEventListener('click', function(){
-            startGame(cellContainer, 81, "hard");
-            }
-    )} else {
-        playButton.addEventListener('click', function(){
-            startGame(cellContainer, 49, "hell");
-            }
-    )}
-}
-getOption()
+    if ( output === "easy") {        
+        startGame(cellContainer, 100, "easy");        
+    } else if (output === "hard") {        
+        startGame(cellContainer, 81, "hard");            
+    } else {        
+        startGame(cellContainer, 49, "hell");
+    }
+    
+})
